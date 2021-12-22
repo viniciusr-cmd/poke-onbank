@@ -21,7 +21,7 @@ export class PokesController {
 
     @Get('pokeapi/:id')
     getAllApi(@Param('id') id: number): Observable<AxiosResponse<Pokes[]>> {
-        return this.pokesService.getAllPokes(id)
+        return this.pokesService.getPokes(id)
     }
 
     @Get('pokeapi/list/:offset')

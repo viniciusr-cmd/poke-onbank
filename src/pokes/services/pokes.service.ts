@@ -14,14 +14,14 @@ export class PokesService {
         private readonly pokesEntityRepository: Repository<PokesEntity>, private readonly httpService: HttpService
     ) {}
 
-    getAllPokes(params): Observable<AxiosResponse<Pokes[]>> {
+    getPokes(params): Observable<AxiosResponse<Pokes[]>> {
         const url = `https://pokeapi.co/api/v2/pokemon/${params}`
         return this.httpService.get(url)
         .pipe(map(response => response.data))
     }
 
     getList(offset): Observable<AxiosResponse<Pokes[]>> {
-        const url = ` https://pokeapi.co/api/v2/pokemon?limit=10&offset=${offset}`
+        const url = `https://pokeapi.co/api/v2/pokemon?limit=10&offset=${offset}`
         return this.httpService.get(url)
         .pipe(map(response => response.data))
     }
