@@ -6,11 +6,8 @@ import { PokesController } from './controllers/pokes.controller';
 import { HttpModule } from '@nestjs/axios';
 
 @Module({
-  imports: [
-    TypeOrmModule.forFeature([PokesEntity]),
-    HttpModule
-  ],
+  imports: [TypeOrmModule.forFeature([PokesEntity]), HttpModule],
   providers: [PokesService],
-  controllers: [PokesController]
+  controllers: [PokesController],
 })
 export class PokesModule {}
