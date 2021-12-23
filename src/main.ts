@@ -11,7 +11,7 @@ async function bootstrap() {
   const config = new DocumentBuilder()
   .setTitle('Poke Onbank')
   .setDescription(`Poke API onbank, abaixo está os endpoints que podem ser realizados buscas e consumos, baseados na pokeapi, utilizando-se da mesma via @nestjs/axios.
-  Para consultas na PokeAPI, foi criado o endpoint /pokeapi, para consultas na custom database, fora utilizado o endpoint /pokes.`)
+  Para consultas na PokeAPI, foi criado o endpoint /pokeapi, para consultas na custom database, fora utilizado o endpoint /pokes. Mesmo assim, peço que utilizem o INSOMNIA ou POSTMAN para uma experiência mais completa.`)
   .build()
   
   const document = SwaggerModule.createDocument(app, config)

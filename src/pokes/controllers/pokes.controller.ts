@@ -12,9 +12,10 @@ import { Pokes } from '../models/poke.interface';
 import { PokesService } from '../services/pokes.service';
 import { Observable } from 'rxjs';
 import { AxiosResponse } from 'axios';
-import { ApiOkResponse, ApiCreatedResponse } from '@nestjs/swagger';
+import { ApiOkResponse, ApiCreatedResponse, ApiTags } from '@nestjs/swagger';
 
 @Controller('pokes')
+@ApiTags('Onbank Pokes')
 export class PokesController {
   constructor(private pokesService: PokesService) {}
 
