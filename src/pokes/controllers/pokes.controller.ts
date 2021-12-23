@@ -14,8 +14,8 @@ import { Observable } from 'rxjs';
 import { AxiosResponse } from 'axios';
 import { ApiOkResponse, ApiCreatedResponse, ApiTags } from '@nestjs/swagger';
 
-@Controller('pokes')
 @ApiTags('Onbank Pokes')
+@Controller('pokes')
 export class PokesController {
   constructor(private pokesService: PokesService) {}
 
