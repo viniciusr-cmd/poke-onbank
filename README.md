@@ -24,7 +24,8 @@
 
 # DOCS
 
-## Para utilização da documentação desta API, por favor, acesse <http://localhost:3000/docs/>
+## Para este app, fora utilizado as tecnologias:  TypeScript, Nest.js, Swagger/OpenAPI para documentação.
+## Para utilização da documentação desta API, após a instalação do pacote, por favor, acesse <http://localhost:3000/docs/>
 
 ## Description
 
